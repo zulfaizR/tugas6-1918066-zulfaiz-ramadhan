@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sp"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Select Your City"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_city"
+        android:spinnerMode="dialog"
+        android:textColor="@color/white"
+        android:entries="@array/nama_kota"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_one_time_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#0F00ACC1"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="sans-serif-black"
+        android:text="Set One Time Task"
+        app:iconTintMode="multiply"
+        app:strokeColor="#7AB0CA"
+        app:strokeWidth="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_periodic_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1D7AB0CA"
+            android:backgroundTintMode="multiply"
+            android:text="Set Periodic"
+            app:strokeColor="#7AB0CA"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/btn_cancel_periodic_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel Periodic"
+            android:enabled="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:text="Status : "
+        android:textSize="16sp" />
+
+</LinearLayout>

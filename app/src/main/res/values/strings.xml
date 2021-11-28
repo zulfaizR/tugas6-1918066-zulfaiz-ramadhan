@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">tugas6_1918066</string>
+    <string-array name="nama_kota">
+        <item>BLITAR</item>
+        <item>MALANG</item>
+        <item>SURABAYA</item>
+        <item>JOGJAKARTA</item>
+        <item>DENPASAR</item>
+    </string-array>
+
+</resources>
